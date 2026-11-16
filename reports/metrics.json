@@ -1,0 +1,76 @@
+{
+  "train_snapshot_week": 52,
+  "oot_snapshot_week": 65,
+  "train_clients": 2057,
+  "oot_clients": 1876,
+  "train_churn_rate": 0.0622,
+  "oot_churn_rate": 0.0522,
+  "candidate_features": 21,
+  "final_features": [
+    "tenure_months",
+    "products_held",
+    "has_rm",
+    "recency_in_wks",
+    "freq_out",
+    "freq_in",
+    "active_wks_out",
+    "active_wks_in",
+    "log_monetary_in",
+    "failed_rate",
+    "in_out_ratio",
+    "trend_out_amt",
+    "trend_in_cnt",
+    "slope_out_cnt",
+    "cv_out_amt",
+    "seg_LARGE_CORPORATE",
+    "seg_PUBLIC_SECTOR",
+    "seg_SME"
+  ],
+  "n_final_features": 18,
+  "vif_dropped": [
+    "recency_out_wks",
+    "log_monetary_out",
+    "trend_out_cnt"
+  ],
+  "roc_auc_validation": 0.8558,
+  "roc_auc_oot": 0.8438,
+  "gini_oot": 0.6876,
+  "cox_c_index_oot": 0.8059,
+  "tier_thresholds": {
+    "HIGH": 0.55,
+    "MEDIUM": 0.35
+  },
+  "tier_report_oot": [
+    {
+      "tier": "HIGH",
+      "clients": 245,
+      "churners": 60,
+      "churn_rate": 0.245,
+      "share_of_churners": 0.612,
+      "lift_vs_base": 4.688
+    },
+    {
+      "tier": "MEDIUM",
+      "clients": 357,
+      "churners": 15,
+      "churn_rate": 0.042,
+      "share_of_churners": 0.153,
+      "lift_vs_base": 0.804
+    },
+    {
+      "tier": "LOW",
+      "clients": 1274,
+      "churners": 23,
+      "churn_rate": 0.018,
+      "share_of_churners": 0.235,
+      "lift_vs_base": 0.346
+    }
+  ],
+  "top_shap_drivers": {
+    "slope_out_cnt": 0.4966000020503998,
+    "trend_in_cnt": 0.4632999897003174,
+    "in_out_ratio": 0.26260000467300415,
+    "freq_in": 0.2289000004529953,
+    "active_wks_in": 0.22339999675750732
+  }
+}
