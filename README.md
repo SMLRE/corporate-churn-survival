@@ -1,5 +1,7 @@
 # Corporate Churn Early-Warning (XGBoost + Survival Analysis)
 
+[![CI](https://github.com/SMLRE/corporate-churn-survival/actions/workflows/ci.yml/badge.svg)](https://github.com/SMLRE/corporate-churn-survival/actions/workflows/ci.yml)
+
 Predicts which corporate clients of a bulk-payments platform will go dormant in the next ~90 days, **how soon**, and **why**, then sorts them into risk tiers that a relationship team can act on.
 
 > **About the data.** This is a public re-implementation of a production system I built at a commercial bank. The bank's data is proprietary and is **not** in this repo. Everything here runs on a synthetic generator that reproduces the *shape* of the problem (fading activity before churn, seasonal dips, clients who stop paying out but keep receiving funds). Table and column names are generic. The **In production** section reports the real project. Everything after it comes from the synthetic data.
@@ -94,4 +96,4 @@ reports/                       metrics.json, figures, scored output
 
 ## Author
 
-**Oluwasemilore Sadare**, Senior Data Scientist · [LinkedIn](https://www.linkedin.com/in/oluwasemilore-sadare) · [Portfolio](https://github.com/SMLRE)
+**Oluwasemilore Sadare**, Data Scientist · [LinkedIn](https://www.linkedin.com/in/oluwasemilore-sadare) · [Portfolio](https://github.com/SMLRE)
